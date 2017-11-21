@@ -1,0 +1,17 @@
+
+Leap motion SDK has been modified in order to apply correctly filter script.
+
+In order to show a hand on the screen, it is mandatory to add "Left/Right Hand Low Pass filter" script on leap motion hand object.
+If you don't want to apply the filter set the T value to 0.01.
+
+In this project, each exercises are represented as scenes with an explicit name..
+
+Low Pass filter is applied on CapsuleHand_L and CapsuleHand_R with by default 0.01 as T value (means no filtering).
+CapsuleHand_L and CapsuleHand_R  can be found on LMHeadMountedRig -> HandModels
+
+One each CapsuleHand_L and CapsuleHand_R  there is also a record scrpit which record position of palm position and all finger chosen with checkbox. By default the folder where CSV file is saved, is C:\\Users\\ケビン\\Documents, but you can change it in the inspector. A CSV file is save. Then I was using an opensource software to make graphics (DatPlot). 
+
+Concerning exercises, you can find scripts on the object named InteractionCube.
+
+
+If any question or problems, you can contact me at this email address: maskevin74@gmail.com
